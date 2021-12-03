@@ -3,7 +3,7 @@ import collections
 import math
 import re
 
-lines = [l.rstrip('\n') for l in open("input7.txt")]
+lines = [l.rstrip('\n') for l in open("2020/Day07/input.txt")]
 
 containedin = collections.defaultdict(set)
 contains = collections.defaultdict(list)
@@ -21,7 +21,7 @@ def check(color):
         holdsgold.add(c)
         check(c)
 check('shiny gold')
-print(len(holdsgold))
+print("Part 1:", len(holdsgold))
 
 def cost(color):
     total = 0
@@ -29,4 +29,4 @@ def cost(color):
         total += ct
         total += ct * cost(inner)
     return total
-print(cost('shiny gold'))
+print("Part 2:", cost('shiny gold'))

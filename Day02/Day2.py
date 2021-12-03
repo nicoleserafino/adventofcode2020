@@ -1,6 +1,6 @@
 import re
 
-with open("input2.txt", 'r') as data:
+with open("2020\Day02\input.txt", 'r') as data:
     lines = data.readlines()
 
 array = []
@@ -26,5 +26,5 @@ def day2_2():
             count += 1
     return count
 
-print(f"Day 2, part 1: {day2_1()}")
-print(f"Day 2, part 2: {day2_2()}")
+print(f"Part 1: {day2_1()}")
+print(f"Part 2: {day2_2()}")

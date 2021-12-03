@@ -1,4 +1,4 @@
-with open("input11.txt") as f:
+with open("2020/Day11/input.txt") as f:
     data = [list(row) for row in f.read().split('\n')]
 
 def canSee(grid, r, c, dr, dc):

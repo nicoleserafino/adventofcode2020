@@ -1,4 +1,4 @@
-m = [e for e in open("2020\Day3\input3.txt","rt").read().split()]
+m = [e for e in open("2020\Day03\input.txt","rt").read().split()]
 
 def count(m:list,r:int,b:int)->int:
   w = len(m[0])

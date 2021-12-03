@@ -49,4 +49,5 @@ def part2(fields, your_ticket, valid_tickets):
 fields, your_ticket, nearby_tickets = parse_input()
 valid_tickets, part1 = check_valid(fields, nearby_tickets)
 
-print(f'Part 1: {part1}, Part 2: {part2(fields, your_ticket, valid_tickets)}')
+print(f'Part 1: {part1}')
+print(f'Part 2: {part2(fields, your_ticket, valid_tickets)}')

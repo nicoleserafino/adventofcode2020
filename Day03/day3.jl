@@ -10,9 +10,9 @@ part1(data, slope = (3, 1)) = count(1:size(data, 2) ÷ slope[2]) do i
     data[idx...]
 end
 
-@_ get_data("input3.txt") |> part1 |> println("Part 1 answer: ", __)
+@_ get_data("2020/Day03/input.txt") |> part1 |> println("Part 1 answer: ", __)
 
 part2(data) = @_ [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)] |>
     part1.(Ref(data), __) |> prod
 
-@_ get_data("input3.txt") |> part2 |> println("Part 2 answer: ", __)
+@_ get_data("2020/Day03/input.txt") |> part2 |> println("Part 2 answer: ", __)

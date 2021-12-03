@@ -1,4 +1,4 @@
-with open("input9.txt") as f:
+with open("2020/Day09/input.txt") as f:
     s = f.read().strip().split("\n")
 
 nums = [int(x) for x in s]
@@ -14,7 +14,7 @@ target = -1
 for i in range(25,len(nums)):
     if not valid(nums[i-25:i], nums[i]):
         target = nums[i]
-        print(target)
+        print("Part 1:", target)
         break
 
 sset = {}
@@ -26,5 +26,5 @@ for i in range(len(nums)):
     if rsum - target in sset:
         lo,hi = sset[rsum-target],i
         vals = nums[lo:hi+1]
-        print(min(vals)+max(vals))
+        print("Part 2:", min(vals)+max(vals))
         break

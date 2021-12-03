@@ -23,7 +23,7 @@ public class PasswordUncorruptor {
     }
 
     final List<PasswordLine> setup() {
-        try (final BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/day-two.txt"))) {
+        try (final BufferedReader reader = new BufferedReader(new FileReader("2020/Day02/input.txt"))) {
             return reader.lines().parallel().map(s -> {
                 final Matcher matcher = pattern.matcher(s);
                 if (!matcher.matches()) {

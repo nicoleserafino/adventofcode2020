@@ -33,10 +33,10 @@ class Ferry:
 
 f = Ferry()
 
-for line in open("input12.txt"):
+for line in open("2020/Day12/input.txt"):
     f.command(line)
 
-print(f.manhattan())
+print("Part 1:", f.manhattan())
 
 # Part 2
 
@@ -83,7 +83,7 @@ class WaypointFerry:
 
 w = WaypointFerry()
 
-for line in open("input12.txt"):
+for line in open("2020/Day12/input.txt"):
     w.command(line)
 
-print(w.manhattan())
+print("Part 2:", w.manhattan())

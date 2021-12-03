@@ -36,4 +36,5 @@ def part2(buses):
 timestamp, buses = open('2020\Day13\input.txt', "r").readlines()
 timestamp, buses = int(timestamp), [(i, int(bus)) for i, bus in enumerate(buses.split(',')) if bus != 'x']
 
-print(f'Part 1: {part1(timestamp, buses)}, Part 2: {part2(buses)}')
+print(f'Part 1: {part1(timestamp, buses)}')
+print(f'Part 2: {part2(buses)}')

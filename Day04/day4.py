@@ -1,7 +1,7 @@
 import re
 
 # Open file and split into passport segments
-passports = open('input4.txt').read().strip().split('\n\n')
+passports = open('2020\Day04\input.txt').read().strip().split('\n\n')
 
 # Create dictionary for each field and a validator for that field
 fields = {
@@ -27,4 +27,5 @@ for passport in passports:
         #Check if all functions from our fields dictionary return True
         if all(fields[key](passport_dict[key]) for key in fields):
             p2 += 1
-print(p1, p2)
+print("Part 1:", p1)
+print("Part 2:", p2)

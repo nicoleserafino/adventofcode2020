@@ -26,4 +26,5 @@ def part2(instructions):
 lines = open('2020\Day14\input.txt').read().splitlines()
 instructions = [line.replace('mem', '').replace('[', '').replace(']', '').split(' = ') for line in lines]
 
-print(f'Part 1: {part1(instructions)}, Part 2: {part2(instructions)}')
+print(f'Part 1: {part1(instructions)}')
+print(f'Part 2: {part2(instructions)}')

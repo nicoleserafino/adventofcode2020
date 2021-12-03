@@ -1,2 +1,19 @@
-g(a,b,c,d) = parse(Int,a) <= count(c,d)<= parse(Int,b)
-sum(map(x->g(x...),split.(readlines("2020/Day2/input2.txt"),r"(\s|:\s|-)")))
+using DelimitedFiles
+
+pw = readdlm("2020/Day02/input.txt")
+
+# puzzle 1
+function check_pw1(rule, target, password)
+    bounds = [parse(Int, split(rule, "-")[i]) for i in 1:2]
+    count(i -> (i == target[1]), password) in bounds[1]:bounds[2]
+end
+
+println(count(i -> (check_pw1(pw[i, 1], pw[i, 2], pw[i, 3])), 1:1000))
+
+# puzzle 2
+function check_pw2(rule, target, password)
+    bounds = [parse(Int, split(rule, "-")[i]) for i in 1:2]
+    count(i -> (password[i] == target[1]), bounds) == 1
+end
+
+println(count(i -> (check_pw2(pw[i, 1], pw[i, 2], pw[i, 3])), 1:1000))

@@ -3,7 +3,7 @@ import math
 import re
 import sys
 
-lines = [l.rstrip('\n') for l in open("input8.txt")]
+lines = [l.rstrip('\n') for l in open("2020/Day08/input.txt")]
 
 #part 1:
 acc = 0
@@ -11,7 +11,7 @@ pc = 0
 seen = set()
 while True:
     if pc in seen:
-        print(acc)
+        print("Part 1:", acc)
         break
     seen.add(pc)
     line = lines[pc]
@@ -58,4 +58,4 @@ for i in range(len(lines)):
         prog[i] = prog[i].replace('nop', 'jmp')
     x = tryprog(prog)
     if x:
-        print(x)
+        print("Part 2:", x)

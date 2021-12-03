@@ -38,4 +38,5 @@ expressions = open('2020\Day18\input.txt').read().splitlines()
 part1 = sum(evaluate_without_precedence(expression) for expression in expressions)
 part2 = sum(evaluate_with_precedence(expression) for expression in expressions)
 
-print(f'Part 1: {part1}, Part 2: {part2}')
+print(f'Part 1: {part1}')
+print(f'Part 2: {part2}')

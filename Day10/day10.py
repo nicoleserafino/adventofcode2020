@@ -3,7 +3,7 @@ import re
 p1 = 0
 p2 = 0
 
-xs = [int(x) for x in list(open("input10.txt"))]
+xs = [int(x) for x in list(open("2020/Day10/input.txt"))]
 xs.append(0)
 xs = sorted(xs)
 xs.append(max(xs)+3)
@@ -35,5 +35,5 @@ def dp(i):
     DP[i] = ans
     return ans
 
-print(n1*n3)
-print(dp(0))
+print("Part 1:", n1*n3)
+print("Part 2:", dp(0))

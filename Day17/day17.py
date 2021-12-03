@@ -37,4 +37,5 @@ active = {(x, y, 0, 0) for y, line in enumerate(lines) for x, state in enumerate
 part1 = run_cycles(active, 0, 0)
 part2 = run_cycles(active, -1, 1)
 
-print(f'Part 1: {part1}, Part 2: {part2}')
+print(f'Part 1: {part1}')
+print(f'Part 2: {part2}')

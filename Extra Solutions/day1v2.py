@@ -1,7 +1,7 @@
 def Find2():
     data = list()
 
-    with open('C:\\Users\\nserafino\\Documents\\Other\\Advent of Code\\2020\\Day1\\input.txt', 'r') as file:
+    with open('2020\\Day01\\input.txt', 'r') as file:
         for line in file:
             data.append(int(line.strip('\n'). strip('\r')))
 
@@ -15,7 +15,7 @@ def Find2():
 def Find3():
     data = list()
 
-    with open('C:\\Users\\nserafino\\Documents\\Other\\Advent of Code\\2020\\Day1\\input.txt', 'r') as file:
+    with open('2020\\Day01\\input.txt', 'r') as file:
         for line in file:
             data.append(int(line.strip('\n'). strip('\r')))
 
