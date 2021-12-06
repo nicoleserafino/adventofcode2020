@@ -25,10 +25,9 @@ def part_1(public_keys):
     return value
 
 
-# sample_data = get_data("day_25_sample.txt")
-challenge_data = get_data("2020\Day25\input.txt")
+
 
 if __name__ == "__main__":
-    # assert part_1(sample_data) == 14897079
 
+    challenge_data = get_data("2020\Day25\input.txt")
     print(part_1(challenge_data))  # 16902792
