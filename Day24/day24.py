@@ -59,14 +59,10 @@ def part_2(hexmap):
     return len(hexmap)
 
 
-# sample_data = get_data("day_24_sample.txt")
-challenge_data = get_data("2020\Day24\input.txt")
-
 if __name__ == "__main__":
-    # sum_black, test_tiles = part_1(sample_data)
-    # assert sum_black == 10
-    # assert part_2(test_tiles) == 2208
-
+    
+    challenge_data = get_data("2020\Day24\input.txt")
+    
     sum_black, challenge_tiles = part_1(challenge_data)
     print(sum_black)  # 263
     print(part_2(challenge_tiles))  # 3649
